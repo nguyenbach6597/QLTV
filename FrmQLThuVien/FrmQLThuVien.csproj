@@ -266,6 +266,7 @@
     <Reference Include="System.Xml" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Cache.cs" />
     <Compile Include="DocGia.cs">
       <SubType>Form</SubType>
     </Compile>
@@ -296,6 +297,9 @@
     <Compile Include="Utils.cs" />
     <Compile Include="XuLyDb\DangNhap\clsDangNhap.cs" />
     <Compile Include="XuLyDb\SqlDataHelper.cs" />
+    <Compile Include="XuLyDb\User\ClsDeteleUser.cs" />
+    <Compile Include="XuLyDb\User\ClsThemNhanVien.cs" />
+    <Compile Include="XuLyDb\User\ClsUpdateUser.cs" />
     <Compile Include="XuLyDb\User\SelectUser.cs" />
     <EmbeddedResource Include="DocGia.resx">
       <DependentUpon>DocGia.cs</DependentUpon>
@@ -318,6 +322,7 @@
     <Compile Include="Properties\Resources.Designer.cs">
       <AutoGen>True</AutoGen>
       <DependentUpon>Resources.resx</DependentUpon>
+      <DesignTime>True</DesignTime>
     </Compile>
     <None Include="packages.config" />
     <None Include="Properties\Settings.settings">
@@ -333,7 +338,28 @@
   <ItemGroup>
     <None Include="App.config" />
   </ItemGroup>
-  <ItemGroup />
+  <ItemGroup>
+    <Content Include="Resources\icons8-brief-64.png" />
+    <Content Include="Resources\icons8-business-64.png" />
+    <Content Include="Resources\icons8-checkmark-48.png" />
+    <Content Include="Resources\icons8-delete-16.png" />
+    <Content Include="Resources\icons8-delete-24.png" />
+    <Content Include="Resources\icons8-delete-48 %281%29.png" />
+    <Content Include="Resources\icons8-document-64.png" />
+    <Content Include="Resources\icons8-email-16.png" />
+    <Content Include="Resources\icons8-key-24.png" />
+    <Content Include="Resources\icons8-key-48.png" />
+    <Content Include="Resources\icons8-new-post-16.png" />
+    <Content Include="Resources\icons8-new-post-24.png" />
+    <Content Include="Resources\icons8-new-post-32.png" />
+    <Content Include="Resources\icons8-pencil-16.png" />
+    <Content Include="Resources\icons8-pencil-24.png" />
+    <Content Include="Resources\icons8-people-48.png" />
+    <Content Include="Resources\icons8-plus-math-24.png" />
+    <Content Include="Resources\icons8-save-24.png" />
+    <Content Include="Resources\if_filter_173013 %281%29.png" />
+    <Content Include="Resources\if_filter_173013 %282%29.png" />
+  </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
   <!-- To modify your build process, add your task inside one of the targets below and uncomment it. 
        Other similar extension points exist, see Microsoft.Common.targets.

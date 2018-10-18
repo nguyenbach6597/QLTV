@@ -11,7 +11,8 @@ namespace qlcv.XuLyVsDB.User
 
         SqlDataHelper dh = new SqlDataHelper();
         DataTable dt = new DataTable();
-        
+
+        public string ID { get; private set; }
         public bool IsAdmin { get; private set; }
         public string Name { get; private set; }
         public string Username { get; private set; }
@@ -21,13 +22,14 @@ namespace qlcv.XuLyVsDB.User
             List<SelectUser> list = new List<SelectUser>();
             try
             {
-                dt = dh.ExecuteDataSet("usp_Nhanvien_select", new SqlParameter[0]).Tables[0];
+                dt = dh.ExecuteDataSet("usp_NhanVien_select", new SqlParameter[0]).Tables[0];
                 if (dt.Rows.Count != 0)
                 {
                     foreach (DataRow dr in dt.Rows)
                     {
                         SelectUser sl = new SelectUser
                         {
+                            ID = dr["ID"] == DBNull.Value ? "" : dr["ID"].ToString(),
                             Name = dr["NAME"] == DBNull.Value ? "" : dr["NAME"].ToString(),              
                             Username = dr["USERNAME"] == DBNull.Value ? "" : dr["USERNAME"].ToString(),                         
                             IsAdmin = dr["ISADMIN"] == DBNull.Value ? false : bool.Parse(dr["ISADMIN"].ToString()),

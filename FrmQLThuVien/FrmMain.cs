@@ -1,4 +1,6 @@
-﻿using System;
+﻿using qlcv;
+using log4net;
+using System;
 using System.Collections.Generic;
 using System.ComponentModel;
 using System.Data;
@@ -12,16 +14,48 @@ namespace FrmQLThuVien
 {
     public partial class FrmMain : Form
     {
+        private ILog lg = LogManager.GetLogger(typeof(FrmMain));
         public static bool isAdmin;
         public FrmMain(bool isAdmin)
         {
             InitializeComponent();
             FrmMain.isAdmin = isAdmin;
         }
+        private void LoadPhanQuyen()
+        {
+            try
+            {
+                txtTaiKhoan.Caption = "Chúc " + Cache.username + " có một ngày tốt lành!";
+                if (!IsAdmin)
+                {
+                    btCongViec.Enabled = false;
+                    btDuAn.Enabled = false;
+                    btNhanVien.Enabled = false;
+
+                }
+            }
+            catch (Exception ex)
+            {
+                lg.Error(ex);
+            }
+
+        }
 
         private void barButtonItem6_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
+           
+        }
 
+        private void btNhanVien_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmNhanVien fm = new frmNhanVien();
+            fm.Show();
+        }
+
+        private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            DocGia fm = new DocGia();
+            fm.Show();
         }
     }
 }
