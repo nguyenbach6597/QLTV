@@ -42,6 +42,10 @@ namespace qlcv
 
                     FrmMain dn = new FrmMain(true);
                     dn.Show();
+                    this.Hide();
+                    // lam sao an cai form dang nhap di e
+                    // goi fb di
+
                     //Cache.username = username;
                     //Cache.idUser = Int32.Parse(dt.Rows[0]["ID"].ToString());
 

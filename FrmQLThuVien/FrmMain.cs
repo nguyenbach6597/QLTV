@@ -26,7 +26,7 @@ namespace FrmQLThuVien
             try
             {
                 txtTaiKhoan.Caption = "Chúc " + Cache.username + " có một ngày tốt lành!";
-                if (!IsAdmin)
+                if (!isAdmin)
                 {
                     btCongViec.Enabled = false;
                     btDuAn.Enabled = false;
