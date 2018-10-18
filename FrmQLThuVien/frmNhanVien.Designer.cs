@@ -116,7 +116,7 @@
             this.layoutControl1.Controls.Add(this.tbName);
             this.layoutControl1.Dock = System.Windows.Forms.DockStyle.Fill;
             this.layoutControl1.Location = new System.Drawing.Point(0, 0);
-            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.layoutControl1.Margin = new System.Windows.Forms.Padding(4);
             this.layoutControl1.Name = "layoutControl1";
             this.layoutControl1.OptionsCustomizationForm.DesignTimeCustomizationFormPositionAndSize = new System.Drawing.Rectangle(388, 233, 450, 400);
             this.layoutControl1.Root = this.layoutControlGroup1;
@@ -128,7 +128,7 @@
             // 
             this.tbPass.Enabled = false;
             this.tbPass.Location = new System.Drawing.Point(610, 37);
-            this.tbPass.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbPass.Margin = new System.Windows.Forms.Padding(4);
             this.tbPass.Name = "tbPass";
             this.tbPass.Size = new System.Drawing.Size(196, 25);
             this.tbPass.TabIndex = 19;
@@ -137,7 +137,7 @@
             // 
             this.gridSplitContainer1.Grid = this.gc;
             this.gridSplitContainer1.Location = new System.Drawing.Point(3, 103);
-            this.gridSplitContainer1.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gridSplitContainer1.Margin = new System.Windows.Forms.Padding(4);
             this.gridSplitContainer1.Name = "gridSplitContainer1";
             this.gridSplitContainer1.Panel1.Controls.Add(this.gc);
             this.gridSplitContainer1.Size = new System.Drawing.Size(1298, 485);
@@ -147,10 +147,10 @@
             // 
             this.gc.DataMember = "BaoLoi";
             this.gc.Dock = System.Windows.Forms.DockStyle.Fill;
-            this.gc.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gc.EmbeddedNavigator.Margin = new System.Windows.Forms.Padding(4);
             this.gc.Location = new System.Drawing.Point(0, 0);
             this.gc.MainView = this.gv;
-            this.gc.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.gc.Margin = new System.Windows.Forms.Padding(4);
             this.gc.Name = "gc";
             this.gc.RepositoryItems.AddRange(new DevExpress.XtraEditors.Repository.RepositoryItem[] {
             this.repositoryItemCheckEdit1,
@@ -222,8 +222,6 @@
             this.gridColumn8.FieldName = "IsAdmin";
             this.gridColumn8.Name = "gridColumn8";
             this.gridColumn8.OptionsColumn.AllowEdit = false;
-            this.gridColumn8.Visible = true;
-            this.gridColumn8.VisibleIndex = 3;
             this.gridColumn8.Width = 48;
             // 
             // repositoryItemCheckEdit1
@@ -239,7 +237,7 @@
             this.gridColumn9.ColumnEdit = this.btSua;
             this.gridColumn9.Name = "gridColumn9";
             this.gridColumn9.Visible = true;
-            this.gridColumn9.VisibleIndex = 4;
+            this.gridColumn9.VisibleIndex = 3;
             this.gridColumn9.Width = 55;
             // 
             // btSua
@@ -261,7 +259,7 @@
             this.gridColumn10.ColumnEdit = this.btXoa;
             this.gridColumn10.Name = "gridColumn10";
             this.gridColumn10.Visible = true;
-            this.gridColumn10.VisibleIndex = 5;
+            this.gridColumn10.VisibleIndex = 4;
             this.gridColumn10.Width = 80;
             // 
             // btXoa
@@ -284,7 +282,7 @@
             // 
             this.simpleButton2.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("simpleButton2.ImageOptions.Image")));
             this.simpleButton2.Location = new System.Drawing.Point(1200, 33);
-            this.simpleButton2.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.simpleButton2.Margin = new System.Windows.Forms.Padding(4);
             this.simpleButton2.Name = "simpleButton2";
             this.simpleButton2.Size = new System.Drawing.Size(94, 29);
             this.simpleButton2.StyleController = this.layoutControl1;
@@ -296,7 +294,7 @@
             // 
             this.sbThem.ImageOptions.Image = ((System.Drawing.Image)(resources.GetObject("sbThem.ImageOptions.Image")));
             this.sbThem.Location = new System.Drawing.Point(1080, 33);
-            this.sbThem.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.sbThem.Margin = new System.Windows.Forms.Padding(4);
             this.sbThem.Name = "sbThem";
             this.sbThem.Size = new System.Drawing.Size(114, 29);
             this.sbThem.StyleController = this.layoutControl1;
@@ -308,7 +306,7 @@
             // 
             this.cbIsAd.Enabled = false;
             this.cbIsAd.Location = new System.Drawing.Point(946, 37);
-            this.cbIsAd.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.cbIsAd.Margin = new System.Windows.Forms.Padding(4);
             this.cbIsAd.Name = "cbIsAd";
             this.cbIsAd.Size = new System.Drawing.Size(128, 25);
             this.cbIsAd.TabIndex = 12;
@@ -319,7 +317,7 @@
             // 
             this.tbUsername.Enabled = false;
             this.tbUsername.Location = new System.Drawing.Point(342, 37);
-            this.tbUsername.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbUsername.Margin = new System.Windows.Forms.Padding(4);
             this.tbUsername.Name = "tbUsername";
             this.tbUsername.Size = new System.Drawing.Size(196, 25);
             this.tbUsername.TabIndex = 10;
@@ -329,7 +327,7 @@
             // 
             this.tbName.Enabled = false;
             this.tbName.Location = new System.Drawing.Point(76, 37);
-            this.tbName.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.tbName.Margin = new System.Windows.Forms.Padding(4);
             this.tbName.Name = "tbName";
             this.tbName.Size = new System.Drawing.Size(194, 25);
             this.tbName.TabIndex = 5;
@@ -523,6 +521,7 @@
             this.layoutControlItem9.Spacing = new DevExpress.XtraLayout.Utils.Padding(0, 0, 4, 0);
             this.layoutControlItem9.TextSize = new System.Drawing.Size(0, 0);
             this.layoutControlItem9.TextVisible = false;
+            this.layoutControlItem9.Visibility = DevExpress.XtraLayout.Utils.LayoutVisibility.Never;
             // 
             // frmNhanVien
             // 
@@ -530,7 +529,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1304, 591);
             this.Controls.Add(this.layoutControl1);
-            this.Margin = new System.Windows.Forms.Padding(4, 4, 4, 4);
+            this.Margin = new System.Windows.Forms.Padding(4);
             this.Name = "frmNhanVien";
             this.Text = "Quản lý nhân viên";
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;

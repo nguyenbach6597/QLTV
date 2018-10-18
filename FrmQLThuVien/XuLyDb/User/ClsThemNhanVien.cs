@@ -7,12 +7,10 @@ using System.Text;
 
 namespace qlcv.XuLyVsDB.User
 {
-    class ClsThemNhanVien
+    public class ClsThemNhanVien
     {
-        private bool @checked;
-        private DateTime dateTime;
+      
         SqlDataHelper dh = new SqlDataHelper();
-        public bool ThemDuAn { get; internal set; }
 
         public int InsertNhanVien( string Name, string Username, string Password)
         {
@@ -27,6 +25,44 @@ namespace qlcv.XuLyVsDB.User
 
                 };
                 dh.ExecuteNonQuery("usp_Admin_addNhanVien", pa);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return r;
+        }
+        public int UpdateNhanVien(int ID,string Name, string Username)
+        {
+            int r = 0;
+            try
+            {
+                SqlParameter[] pa = new SqlParameter[]
+                {
+                    new SqlParameter("@Name", Name),
+                    new SqlParameter("@Username", Username),
+                    new SqlParameter("@ID", ID)
+
+                };
+                dh.ExecuteNonQuery("usp_Admin_UpdateNhanVien", pa);
+            }
+            catch (Exception ex)
+            {
+                throw ex;
+            }
+            return r;
+        }
+        public int DeleteNhanVien(int ID)
+        {
+            int r = 0;
+            try
+            {
+                SqlParameter[] pa = new SqlParameter[]
+                {
+                    new SqlParameter("@ID", ID)
+
+                };
+                dh.ExecuteNonQuery("usp_Admin_DeleteNhanVien", pa);
             }
             catch (Exception ex)
             {

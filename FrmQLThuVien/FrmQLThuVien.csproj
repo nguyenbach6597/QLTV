@@ -291,11 +291,36 @@
     <Compile Include="frmNhanVien.Designer.cs">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
     </Compile>
+    <Compile Include="frmQLDocGia.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLDocGia.Designer.cs">
+      <DependentUpon>frmQLDocGia.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLNhaXuatBan.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLNhaXuatBan.Designer.cs">
+      <DependentUpon>frmQLNhaXuatBan.cs</DependentUpon>
+    </Compile>
+    <Compile Include="frmQLSach.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="frmQLSach.Designer.cs">
+      <DependentUpon>frmQLSach.cs</DependentUpon>
+    </Compile>
+    <Compile Include="ObjClass\BanDoc.cs" />
+    <Compile Include="ObjClass\NhaXuatBanOBJ.cs" />
     <Compile Include="ObjClass\User.cs" />
     <Compile Include="Program.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Utils.cs" />
     <Compile Include="XuLyDb\DangNhap\clsDangNhap.cs" />
+    <Compile Include="XuLyDb\DocGia\DeleteDocGia.cs" />
+    <Compile Include="XuLyDb\DocGia\InsertDocGia.cs" />
+    <Compile Include="XuLyDb\DocGia\SelectDocGia.cs" />
+    <Compile Include="XuLyDb\DocGia\UpdateDocGia.cs" />
+    <Compile Include="XuLyDb\NhaXuatBan\clsNhaXuatBan.cs" />
     <Compile Include="XuLyDb\SqlDataHelper.cs" />
     <Compile Include="XuLyDb\User\ClsDeteleUser.cs" />
     <Compile Include="XuLyDb\User\ClsThemNhanVien.cs" />
@@ -312,6 +337,15 @@
     </EmbeddedResource>
     <EmbeddedResource Include="frmNhanVien.resx">
       <DependentUpon>frmNhanVien.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLDocGia.resx">
+      <DependentUpon>frmQLDocGia.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLNhaXuatBan.resx">
+      <DependentUpon>frmQLNhaXuatBan.cs</DependentUpon>
+    </EmbeddedResource>
+    <EmbeddedResource Include="frmQLSach.resx">
+      <DependentUpon>frmQLSach.cs</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="Properties\licenses.licx" />
     <EmbeddedResource Include="Properties\Resources.resx">
@@ -349,6 +383,7 @@
     <Content Include="Resources\icons8-email-16.png" />
     <Content Include="Resources\icons8-key-24.png" />
     <Content Include="Resources\icons8-key-48.png" />
+    <None Include="Resources\icons8-literature-64.png" />
     <Content Include="Resources\icons8-new-post-16.png" />
     <Content Include="Resources\icons8-new-post-24.png" />
     <Content Include="Resources\icons8-new-post-32.png" />
@@ -357,6 +392,8 @@
     <Content Include="Resources\icons8-people-48.png" />
     <Content Include="Resources\icons8-plus-math-24.png" />
     <Content Include="Resources\icons8-save-24.png" />
+    <None Include="Resources\icons8-user-groups-64.png" />
+    <None Include="Resources\icons8-staff-64.png" />
     <Content Include="Resources\if_filter_173013 %281%29.png" />
     <Content Include="Resources\if_filter_173013 %282%29.png" />
   </ItemGroup>

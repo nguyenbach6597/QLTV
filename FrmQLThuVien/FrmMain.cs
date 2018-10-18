@@ -54,8 +54,19 @@ namespace FrmQLThuVien
 
         private void barButtonItem9_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
         {
-            DocGia fm = new DocGia();
+            frmQLDocGia fm = new frmQLDocGia();
             fm.Show();
+        }
+
+        private void barButtonItem3_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+
+        }
+
+        private void barButtonItem10_ItemClick(object sender, DevExpress.XtraBars.ItemClickEventArgs e)
+        {
+            frmQLNhaXuatBan frm = new frmQLNhaXuatBan();
+            frm.Show();
         }
     }
 }

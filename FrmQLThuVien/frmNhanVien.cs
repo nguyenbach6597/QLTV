@@ -16,6 +16,7 @@ namespace qlcv
     public partial class frmNhanVien : Form
     {
         private ILog lg = LogManager.GetLogger(typeof(frmNhanVien));
+        ClsThemNhanVien user = new ClsThemNhanVien();
         public frmNhanVien()
         {
             InitializeComponent();
@@ -50,11 +51,20 @@ namespace qlcv
             layoutControlItem13.Visibility = LayoutVisibility.Never;
 
         }
+        private void An()
+        {
+            tbName.Enabled = false;
+            tbUsername.Enabled = false;
+            tbPass.Enabled = false;
+
+        }
         bool checkThem;
         private void sbThem_Click(object sender, EventArgs e)
         {
             Hien();
             checkThem = true;
+            layoutControlItem13.Visibility = LayoutVisibility.Always;
+
         }
 
         private void simpleButton2_Click(object sender, EventArgs e)
@@ -66,7 +76,7 @@ namespace qlcv
 
                     //Thêm người dùng mới
                     //User user = new User
-                    ClsThemNhanVien user = new ClsThemNhanVien();
+                   
                     //user.ThemDuAn = cbThemDA.Checked;
                     //StatusRespon status = Retrofit.instance.addUser(user);
                     //MessageBox.Show(status.Message);
@@ -87,12 +97,33 @@ namespace qlcv
                         tbUsername.ResetText();
                         MessageBox.Show("Thêm nhân viên thành công", "Thông báo");
                         LoadNhanVien();
+                        An();
+
+
                     }
 
                 }
                 else
                 {
                     //Sửa thì vào đây!
+                    if (tbName.Text.Trim().Length == 0 || tbUsername.Text.Trim().Length == 0)
+                    {
+
+                        MessageBox.Show("Vui lòng nhập đủ thông tin", "Thông báo", MessageBoxButtons.OK, MessageBoxIcon.Warning);
+                        return;
+
+                    }
+                    int check = user.UpdateNhanVien(maNhanVien,tbName.Text, tbUsername.Text);
+                    if (check == 0)
+                    {
+
+                        tbName.ResetText();
+                        tbPass.ResetText();
+                        tbUsername.ResetText();
+                        MessageBox.Show("Sửa nhân viên thành công", "Thông báo");
+                        LoadNhanVien();
+                        An();
+                    }
 
                 }
             }
@@ -118,14 +149,34 @@ namespace qlcv
         string userName;
         private void btSua_Click(object sender, EventArgs e)
         {
+            tbName.Enabled = true;
+            tbPass.Enabled = true;
+            tbUsername.Enabled=true;
             layoutControlItem13.Visibility = LayoutVisibility.Never;
             maNhanVien = Int32.Parse(gv.GetRowCellValue(gv.FocusedRowHandle, "ID").ToString());
-            tenNhanVien = gv.GetRowCellValue(gv.FocusedRowHandle, "Name").ToString();
-            userName = gv.GetRowCellValue(gv.FocusedRowHandle, "Username").ToString();
+            tbName.Text = gv.GetRowCellValue(gv.FocusedRowHandle, "Name").ToString();
+            tbUsername.Text = gv.GetRowCellValue(gv.FocusedRowHandle, "Username").ToString();
         }
 
         private void btXoa_Click(object sender, EventArgs e)
         {
+            //Xóa thì vào đây
+            maNhanVien = Int32.Parse(gv.GetRowCellValue(gv.FocusedRowHandle, "ID").ToString());
+            DialogResult dl = MessageBox.Show("Bạn có chắc chắn muốn xóa không?", "Thông báo", MessageBoxButtons.YesNo, MessageBoxIcon.Question);
+            if (dl == DialogResult.Yes)
+            {
+                int check = user.DeleteNhanVien(maNhanVien);
+                if (check == 0)
+                {
+
+                    tbName.ResetText();
+                    tbPass.ResetText();
+                    tbUsername.ResetText();
+                    MessageBox.Show("Xóa nhân viên thành công", "Thông báo");
+                    LoadNhanVien();
+                }
+            }
+           
 
         }
     }

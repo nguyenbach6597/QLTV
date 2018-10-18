@@ -83,6 +83,16 @@ namespace FrmQLThuVien.Properties {
         /// <summary>
         ///   Looks up a localized resource of type System.Drawing.Bitmap.
         /// </summary>
+        internal static System.Drawing.Bitmap icons8_literature_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_literature_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
         internal static System.Drawing.Bitmap icons8_pencil_16 {
             get {
                 object obj = ResourceManager.GetObject("icons8-pencil-16", resourceCulture);
@@ -106,6 +116,26 @@ namespace FrmQLThuVien.Properties {
         internal static System.Drawing.Bitmap icons8_people_48 {
             get {
                 object obj = ResourceManager.GetObject("icons8-people-48", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_staff_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_staff_64", resourceCulture);
+                return ((System.Drawing.Bitmap)(obj));
+            }
+        }
+        
+        /// <summary>
+        ///   Looks up a localized resource of type System.Drawing.Bitmap.
+        /// </summary>
+        internal static System.Drawing.Bitmap icons8_user_groups_64 {
+            get {
+                object obj = ResourceManager.GetObject("icons8_user_groups_64", resourceCulture);
                 return ((System.Drawing.Bitmap)(obj));
             }
         }
