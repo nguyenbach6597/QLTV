@@ -120,4 +120,22 @@
   <metadata name="tbPass.Locked" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
+  <assembly alias="System.Drawing" name="System.Drawing, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b03f5f7f11d50a3a" />
+  <data name="simpleButton2.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAO9JREFUOE9jYFi1ilm9cZe7VuOuUGKwav1uJQZkoFm/y0uzYed/MK7f0aRZv90F
+        Azdu9wdhjYYdEzXqd7zQbtqlCdXOwKBevyMKZoB60y5dqDAK0KjfeQiEtep324DUaTTsfA43hCgDGnYc
+        BmGYATBDNFq2S5JtAAiD+KgGAAMTqgcFaNXv8ADjhh3ReA0gFVPfAGBIz8MajVAMlHcDhsVWnAao1W/T
+        g3obJ1Bv3OmL0wBcsYAMNBq3ew9KA3a8BgosJd6AHbMRBjTucISZCMSNwJBOw4eBaiaD1dbv+IeUH3aZ
+        YIs2vLhpuzYDAwMDANj4czFTTT+yAAAAAElFTkSuQmCC
+</value>
+  </data>
+  <data name="sbThem.ImageOptions.Image" type="System.Drawing.Bitmap, System.Drawing" mimetype="application/x-microsoft.net.object.bytearray.base64">
+    <value>
+        iVBORw0KGgoAAAANSUhEUgAAABAAAAAQCAYAAAAf8/9hAAAABGdBTUEAALGPC/xhBQAAAAlwSFlzAAAO
+        wwAADsMBx2+oZAAAAEdJREFUOE9joCnQrN+ZB8JQLulAs2HnUhCGckkHI8kAUEhr1O9YhYEbdjwEYyxy
+        KLFDsQG4AP3CABcYDgYAQ5qo0CYfMDAAAKM6aL2E1MjZAAAAAElFTkSuQmCC
+</value>
+  </data>
 </root>
